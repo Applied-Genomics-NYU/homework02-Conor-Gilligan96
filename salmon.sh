@@ -9,7 +9,7 @@
 #SBATCH --output=slurm_%j.out
 
 module load salmon/1.0.0
-salmon index -t athal.fa.gz -i athal_index
+salmon index -t athal.fa -i athal_index
 
 for read in ./*_1.fastq
 do
